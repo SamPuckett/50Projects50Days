@@ -1,3 +1,7 @@
+.expanding-cards {
+  overflow-x: hidden;
+}
+
 .expanding-cards button {
   position: absolute;
   left: 25px;
