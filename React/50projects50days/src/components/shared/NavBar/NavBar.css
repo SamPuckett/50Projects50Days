@@ -1,0 +1,7 @@
+nav button {
+  position: absolute;
+  left: 25px;
+  font-size: 2rem;
+  background-color: transparent;
+  color: white;
+}

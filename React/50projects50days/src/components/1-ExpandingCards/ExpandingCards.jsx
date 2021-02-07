@@ -1,15 +1,10 @@
 import { useState } from "react";
-import { useHistory } from "react-router-dom";
 
+import NavBar from "../shared/NavBar/NavBar";
 import "./ExpandingCards.css";
 
 const ExpandingCards = () => {
   const [isCardActive, setIsCardActive] = useState(1);
-  const history = useHistory();
-
-  const backButtonHandler = () => {
-    history.push("/");
-  };
 
   const handleCardClick = (cardNumber) => {
     console.log(`card ${cardNumber} was clicked!`);
@@ -18,10 +13,7 @@ const ExpandingCards = () => {
 
   return (
     <div className="expanding-cards">
-      <nav>
-        <button onClick={backButtonHandler}>←</button>
-        Expanding Cards
-      </nav>
+      <NavBar>Expanding Cards</NavBar>
       <div className="container">
         <div
           onClick={() => {

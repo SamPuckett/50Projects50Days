@@ -2,17 +2,6 @@
   overflow-x: hidden;
 }
 
-.expanding-cards button {
-  position: absolute;
-  left: 25px;
-  font-size: 2rem;
-}
-
-.expanding-cards button {
-  background-color: transparent;
-  color: white;
-}
-
 .expanding-cards .container {
   display: flex;
   width: 90vw;
@@ -52,12 +41,12 @@
 
 /* MOBILE ONLY RULES */
 @media (max-width: 480px) {
-  .container {
+  .expanding-cards .container {
     width: 100vw;
   }
 
-  .panel:nth-of-type(4),
-  .panel:nth-of-type(5) {
+  .expanding-cards .panel:nth-of-type(4),
+  .expanding-cards .panel:nth-of-type(5) {
     display: none;
   }
 }
