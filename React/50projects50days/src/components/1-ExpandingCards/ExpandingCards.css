@@ -1,0 +1,63 @@
+.expanding-cards button {
+  position: absolute;
+  left: 25px;
+  font-size: 2rem;
+}
+
+.expanding-cards button {
+  background-color: transparent;
+  color: white;
+}
+
+.expanding-cards .container {
+  display: flex;
+  width: 90vw;
+}
+
+.expanding-cards .panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 85vh;
+  border-radius: 25px;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.7s ease-in;
+}
+
+.expanding-cards .panel h3 {
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.expanding-cards .panel.active {
+  flex: 5;
+}
+
+.expanding-cards.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+/* MOBILE ONLY RULES */
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
+  }
+}
+
+/* DESKTOP ONLY RULES */
+@media (min-width: 768px) {
+}

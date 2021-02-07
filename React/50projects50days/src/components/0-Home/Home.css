@@ -1,0 +1,30 @@
+.home-cards {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rebeccapurple;
+  width: 80vw;
+  height: 100px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.home-cards h1,
+h2,
+h3 {
+  margin: 5px;
+  padding: 0;
+}
+
+.home-cards h2 {
+  color: white;
+}
+
+.home-cards h3 {
+  color: lightgrey;
+}
+
+/* Desktop CSS Rules BELOW */
+@media (min-width: 768px) {
+}
