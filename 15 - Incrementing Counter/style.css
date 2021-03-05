@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/* Applies it to everything */
+* {
+  box-sizing: border-box;
+}
+
+/* Applies this to only the body element */
+body {
+  background-color: #8e44ad;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* Hides scrollbars in browsers by default */
+  overflow: hidden;
+  margin: 0;
+}
+
+.counter-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  text-align: center;
+  margin: 30px 50px;
+}
+
+.counter {
+  font-size: 60px;
+  margin-top: 10px;
+}
+
+@media (max-width: 580px) {
+  body {
+    flex-flow: column nowrap;
+  }
+}
