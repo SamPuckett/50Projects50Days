@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+/* Applies it to everything */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Applies this to only the body element */
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #222;
+  padding-bottom: 50px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* @todo Nav */
+
+.hero {
+  background-image: url("https://images.pexels.com/photos/208745/pexels-photo-208745.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 100vh;
+}
